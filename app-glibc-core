@@ -1,0 +1,14 @@
+# minisize glibc
+lib/libc.a
+lib/libc_nonshared.a
+lib/libc.so
+lib/libc.so.6
+lib/libm.a
+lib/libm-2.39.a
+lib/libm.so
+lib/libm.so.6
+lib/libresolv.a
+lib/libresolv.so -> libresolv.so.2
+lib/libresolv.so.2
+lib/ld-linux-x86-64.so.2
+bin/ld.so -> ../lib/ld-linux-x86-64.so.2

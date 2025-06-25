@@ -1,0 +1,47 @@
+#
+lib/crt1.o
+lib/crti.o
+lib/crtn.o
+lib/Mcrt1.o
+lib/Scrt1.o
+lib/gcrt1.o
+lib/rcrt1.o
+lib/grcrt1.o
+# extension libs
+lib/libg.a
+lib/libmcheck.a
+# extension libs
+lib/libmemusage.so
+lib/libpcprofile.so
+lib/libnsl.so.1
+lib/libnss_dns.so.2
+lib/libnss_files.so.2
+lib/libc_malloc_debug.so -> libc_malloc_debug.so.0
+lib/libc_malloc_debug.so.0
+lib/libnss_db.so -> libnss_db.so.2
+lib/libnss_db.so.2
+lib/libnss_hesiod.so -> libnss_hesiod.so.2
+lib/libnss_hesiod.so.2
+lib/libnss_compat.so -> libnss_compat.so.2
+lib/libnss_compat.so.2
+# extension libs
+lib/librt.a
+lib/librt.so.1
+lib/libutil.a
+lib/libutil.so.1
+lib/libdl.a
+lib/libdl.so.2
+# extension libs
+lib/libanl.a
+lib/libanl.so -> libanl.so.1
+lib/libanl.so.1
+lib/libmvec.a
+lib/libmvec.so -> libmvec.so.1
+lib/libmvec.so.1
+lib/libpthread.a
+lib/libpthread.so.0
+lib/libthread_db.so -> libthread_db.so.1
+lib/libthread_db.so.1
+lib/libBrokenLocale.a
+lib/libBrokenLocale.so -> libBrokenLocale.so.1
+lib/libBrokenLocale.so.1

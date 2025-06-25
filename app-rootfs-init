@@ -1,0 +1,5 @@
+#
+init
+etc/banner
+etc/init.d/rcS
+

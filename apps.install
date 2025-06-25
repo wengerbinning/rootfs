@@ -1,0 +1,6 @@
+pre_install()  { return; }
+post_install() { return; }
+pre_upgrade()  { return; }
+post_upgrade() { return; }
+pre_remove()   { return; }
+post_remove()  { return; }

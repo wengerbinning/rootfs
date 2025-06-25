@@ -1,0 +1,14 @@
+#!/bin/sh
+
+## mount
+# mount -n -t proc          proc /proc
+# mount -n -t sysfs        sysfs /sys
+# mount -n -t devtmpfs  devtmpfs /dev
+test -d /proc || mkdir /proc && mount -n -t proc         proc /proc
+test -d /sys  || mkdir /sys  && mount -n -t sysfs       sysfs /sys
+test -d /dev  || mkdir /dev  && mount -n -t devtmpfs devtmpfs /dev
+test -d /tmp  || mkdir /tmp  && mount -n -t tmpfs       tmpfs /tmp
+## device
+#mknod /dev/console c 5 1
+
+exec /sbin/init

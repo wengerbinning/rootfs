@@ -1,0 +1,29 @@
+* install glibc-core
+
+```shell
+ln -s lib $dst/lib64
+```
+
+* install busybox & rootfs-account
+
+```shell
+sudo chroot $dst /bin/sh
+```
+
+```shell
+export PATH=/usr/bin:/usr/sbin:/bin:/sbin
+```
+
+* install rootfs-init
+
+```shell
+cd 0 && find ./ -path ./.git -prune -o -print0 | cpio --create --null --verbose --format=newc > ../initramfs.img
+```
+
+
+```shell
+qemu-system-x86_64 -name vminche -nographic \
+    -cpu qemu64 -smp 1 -m 1G \
+    -kernel vmlinuz -append "console=ttyS0, loglevel=8" \
+    -initrd initramfs.img
+```
