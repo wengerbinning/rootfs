@@ -1,0 +1,16 @@
+# A B
+#
+#
+        # D
+		# de
+
+#
+bin/busybox
+bin/busybox*
+bin/busybox1*
+bin/busybox2!
+bin/busybox2#
+bin/busybox2@
+bin/busybox3@
+#
+bin/cp -> busybox

@@ -1,0 +1,1 @@
+awk -vsrc=src -vdst=dst -f install.awk app-list > result
